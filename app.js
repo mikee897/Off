@@ -33,7 +33,7 @@ const products = [
   },
   {
     id: 2,
-    name: 'Microsoft Excel',
+    name: ' Excel',
     tagline: 'Advanced spreadsheets and data analysis',
     category: 'Data & Analytics',
     icon: '📊',
@@ -376,8 +376,8 @@ function renderStore() {
     <div class="store-page page">
       <div class="hero">
         <div class="hero-inner">
-          <span class="hero-eyebrow">Official Microsoft Software</span>
-          <h1>The Microsoft<br>Office Suite</h1>
+          <span class="hero-eyebrow">Quick Office Software</span>
+          <h1>Get Started<br>Office Suite</h1>
           <p class="hero-sub">Authentic licences for the world's most trusted productivity software — Word, Excel, PowerPoint, Teams, and more. Instant download, genuine keys.</p>
           <div class="hero-btns">
             <button class="btn-primary" onclick="document.querySelector('.product-grid').scrollIntoView({behavior:'smooth'})">Browse Products</button>
