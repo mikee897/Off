@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OfficeHub — Microsoft Office Software Store</title>
+  <meta name="description" content="Buy genuine Microsoft Office licences — Word, Excel, PowerPoint, Microsoft 365, Teams, Outlook and more. Instant delivery." />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── TOP NAVIGATION ── -->
+  <nav>
+    <div class="nav-logo" onclick="showStore()">
+      <span class="nav-logo-icon">⊞</span>
+      <span class="logo-name">OfficeHub</span>
+    </div>
+
+    <div class="nav-links">
+      <span class="nav-link" onclick="showStore()">Products</span>
+      <span class="nav-link" onclick="filterBy('Bundles')">Bundles</span>
+      <span class="nav-link">Business</span>
+      <span class="nav-link">Support</span>
+    </div>
+
+    <div class="nav-right">
+      <button class="cart-pill" onclick="showCartMsg()">
+        🛒 Cart <span class="cart-badge" id="cartCount">0</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── SUB-NAV ── -->
+  <div class="subnav">
+    <span class="subnav-brand" onclick="showStore()">Microsoft Office Products</span>
+    <div class="subnav-links">
+      <span class="subnav-link" onclick="filterBy('Productivity')">Word &amp; OneNote</span>
+      <span class="subnav-link" onclick="filterBy('Data & Analytics')">Excel &amp; Access</span>
+      <span class="subnav-link" onclick="filterBy('Presentations')">PowerPoint</span>
+      <span class="subnav-link" onclick="filterBy('Communication')">Teams &amp; Outlook</span>
+      <span class="subnav-link" onclick="filterBy('Bundles')">Microsoft 365</span>
+    </div>
+  </div>
+
+  <!-- ── DYNAMIC PAGE CONTENT ── -->
+  <div id="app"></div>
+
+  <!-- ── JavaScript ── -->
+  <script src="app.js"></script>
+
+</body>
+</html>
