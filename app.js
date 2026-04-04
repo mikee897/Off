@@ -377,7 +377,7 @@ function renderStore() {
       <div class="hero">
         <div class="hero-inner">
           <span class="hero-eyebrow">QUICK OFFICE APPS</span>
-          <h1>The Microsoft<br>Get Started
+          <h1>Get Started
 Office Suite</h1>
           <p class="hero-sub">Instant deliver of any app you choose for the world's most trusted productivity software — Word, Excel, PowerPoint, Teams, and more. Instant download, genuine keys.</p>
           <div class="hero-btns">
