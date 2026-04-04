@@ -103,19 +103,27 @@ nav {
 /* Hero */
 .hero {
   background:var(--surface);
-  padding:4rem clamp(1rem,4vw,4rem) 4rem;
+  padding:3.5rem clamp(1rem,4vw,4rem);
   border-bottom:1px solid var(--border);
   position:relative; overflow:hidden;
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:2rem; align-items:center;
 }
 .hero::after {
   content:'';
   position:absolute; top:0; right:0;
-  width:45%; height:100%;
-  background:linear-gradient(145deg,#e8f4fb 0%,#cce4f7 100%);
-  clip-path:polygon(8% 0,100% 0,100% 100%,0 100%);
+  width:52%; height:100%;
+  background:linear-gradient(145deg,#e8f4fb 0%,#c8dff5 100%);
+  clip-path:polygon(6% 0,100% 0,100% 100%,0 100%);
   pointer-events:none;
 }
-.hero-inner { position:relative; z-index:1; max-width:560px; }
+.hero-inner { position:relative; z-index:1; }
+.hero-visual { position:relative; z-index:1; display:flex; justify-content:center; align-items:center; }
+@media (max-width:768px) {
+  .hero { grid-template-columns:1fr; }
+  .hero::after { display:none; }
+  .hero-visual { display:none; }
+}
 .hero-eyebrow {
   font-size:0.74rem; font-weight:600; color:var(--accent);
   text-transform:uppercase; letter-spacing:0.09em;
