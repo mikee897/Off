@@ -33,7 +33,7 @@ const products = [
   },
   {
     id: 2,
-    name: ' Excel',
+    name: 'Microsoft Excel',
     tagline: 'Advanced spreadsheets and data analysis',
     category: 'Data & Analytics',
     icon: '📊',
@@ -376,13 +376,182 @@ function renderStore() {
     <div class="store-page page">
       <div class="hero">
         <div class="hero-inner">
-          <span class="hero-eyebrow">Quick Office Software</span>
-          <h1>Get Started<br>Office Suite</h1>
-          <p class="hero-sub">Authentic licences for the world's most trusted productivity software — Word, Excel, PowerPoint, Teams, and more. Instant download, genuine keys.</p>
+          <span class="hero-eyebrow">QUICK OFFICE APPS</span>
+          <h1>The Microsoft<br>Get Started
+Office Suite</h1>
+          <p class="hero-sub">Instant deliver of any app you choose for the world's most trusted productivity software — Word, Excel, PowerPoint, Teams, and more. Instant download, genuine keys.</p>
           <div class="hero-btns">
             <button class="btn-primary" onclick="document.querySelector('.product-grid').scrollIntoView({behavior:'smooth'})">Browse Products</button>
             <button class="btn-outline" onclick="filterBy('Bundles')">View Bundles →</button>
           </div>
+        </div>
+
+        <div class="hero-visual">
+          <svg viewBox="0 0 420 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:440px;filter:drop-shadow(0 20px 48px rgba(0,103,184,0.13))">
+            <defs>
+              <filter id="cs" x="-20%" y="-20%" width="140%" height="140%">
+                <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.10)"/>
+              </filter>
+              <filter id="cs2" x="-20%" y="-20%" width="140%" height="140%">
+                <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="rgba(0,0,0,0.08)"/>
+              </filter>
+              <!-- Subtle background blob -->
+              <radialGradient id="blob" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#dbeeff" stop-opacity="0.7"/>
+                <stop offset="100%" stop-color="#c8dff5" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <!-- Background glow blob -->
+            <ellipse cx="210" cy="170" rx="200" ry="160" fill="url(#blob)"/>
+
+            <!-- ── LAPTOP BODY ── -->
+            <rect x="60" y="55" width="300" height="192" rx="10" ry="10" fill="#e8e8e8" filter="url(#cs)"/>
+            <rect x="60" y="55" width="300" height="192" rx="10" ry="10" fill="#1b1b1b"/>
+            <!-- Screen bezel -->
+            <rect x="72" y="65" width="276" height="172" rx="5" ry="5" fill="#f3f3f3"/>
+            <!-- Screen content: mock Office interface -->
+            <rect x="72" y="65" width="276" height="172" rx="5" ry="5" fill="#ffffff"/>
+            <!-- Toolbar -->
+            <rect x="72" y="65" width="276" height="22" rx="5" ry="5" fill="#f5f5f5"/>
+            <rect x="72" y="78" width="276" height="9" fill="#f5f5f5"/>
+            <!-- Toolbar dots -->
+            <circle cx="84" cy="76" r="3.5" fill="#ff5f57"/>
+            <circle cx="95" cy="76" r="3.5" fill="#febc2e"/>
+            <circle cx="106" cy="76" r="3.5" fill="#28c840"/>
+            <!-- Ribbon tabs -->
+            <rect x="118" y="70" width="24" height="12" rx="2" fill="#0067b8"/>
+            <rect x="145" y="70" width="24" height="12" rx="2" fill="transparent"/>
+            <rect x="172" y="70" width="24" height="12" rx="2" fill="transparent"/>
+            <!-- Tab text placeholders -->
+            <rect x="121" y="74" width="18" height="3" rx="1" fill="#fff" opacity="0.9"/>
+            <rect x="148" y="74" width="18" height="3" rx="1" fill="#aaa" opacity="0.7"/>
+            <rect x="175" y="74" width="18" height="3" rx="1" fill="#aaa" opacity="0.7"/>
+
+            <!-- Ruler area -->
+            <rect x="72" y="87" width="276" height="8" fill="#f0f0f0"/>
+            <line x1="96"  y1="87" x2="96"  y2="95" stroke="#ccc" stroke-width="0.7"/>
+            <line x1="120" y1="87" x2="120" y2="95" stroke="#ccc" stroke-width="0.7"/>
+            <line x1="144" y1="87" x2="144" y2="95" stroke="#ccc" stroke-width="0.7"/>
+            <line x1="168" y1="87" x2="168" y2="95" stroke="#ccc" stroke-width="0.7"/>
+            <line x1="192" y1="87" x2="192" y2="95" stroke="#ccc" stroke-width="0.7"/>
+            <line x1="216" y1="87" x2="216" y2="95" stroke="#ccc" stroke-width="0.7"/>
+            <line x1="240" y1="87" x2="240" y2="95" stroke="#ccc" stroke-width="0.7"/>
+            <line x1="264" y1="87" x2="264" y2="95" stroke="#ccc" stroke-width="0.7"/>
+            <line x1="288" y1="87" x2="288" y2="95" stroke="#ccc" stroke-width="0.7"/>
+            <line x1="312" y1="87" x2="312" y2="95" stroke="#ccc" stroke-width="0.7"/>
+            <line x1="336" y1="87" x2="336" y2="95" stroke="#ccc" stroke-width="0.7"/>
+
+            <!-- Document area -->
+            <rect x="82" y="97" width="256" height="132" rx="2" fill="#fff"/>
+            <!-- Heading line -->
+            <rect x="92" y="106" width="120" height="8" rx="2" fill="#1b1b1b" opacity="0.85"/>
+            <!-- Subheading underline -->
+            <rect x="92" y="106" width="120" height="1" rx="0" fill="#0067b8" opacity="0.4" y="117"/>
+            <!-- Body text lines -->
+            <rect x="92" y="122" width="236" height="4" rx="1" fill="#888" opacity="0.45"/>
+            <rect x="92" y="130" width="220" height="4" rx="1" fill="#888" opacity="0.45"/>
+            <rect x="92" y="138" width="200" height="4" rx="1" fill="#888" opacity="0.45"/>
+            <rect x="92" y="146" width="230" height="4" rx="1" fill="#888" opacity="0.45"/>
+            <rect x="92" y="154" width="180" height="4" rx="1" fill="#888" opacity="0.45"/>
+            <!-- Blue highlighted line (selected text) -->
+            <rect x="92" y="162" width="155" height="5" rx="1" fill="#0067b8" opacity="0.15"/>
+            <rect x="92" y="162" width="155" height="5" rx="1" fill="none" stroke="#0067b8" stroke-width="0.5" opacity="0.3"/>
+            <rect x="92" y="170" width="210" height="4" rx="1" fill="#888" opacity="0.45"/>
+            <rect x="92" y="178" width="195" height="4" rx="1" fill="#888" opacity="0.45"/>
+            <rect x="92" y="186" width="130" height="4" rx="1" fill="#888" opacity="0.45"/>
+            <!-- Sidebar -->
+            <rect x="318" y="97" width="20" height="132" rx="2" fill="#f5f5f5"/>
+            <rect x="322" y="102" width="12" height="22" rx="2" fill="#0067b8" opacity="0.35"/>
+            <!-- Cursor blink -->
+            <rect x="92" y="196" width="1.5" height="10" rx="1" fill="#0067b8" opacity="0.8">
+              <animate attributeName="opacity" values="0.8;0;0.8" dur="1.2s" repeatCount="indefinite"/>
+            </rect>
+
+            <!-- Laptop base -->
+            <rect x="40" y="247" width="340" height="12" rx="6" ry="6" fill="#d0d0d0" filter="url(#cs2)"/>
+            <rect x="155" y="247" width="110" height="6" rx="3" fill="#b8b8b8"/>
+
+            <!-- ── FLOATING APP ICON CARDS ── -->
+            <!-- Word card — top left -->
+            <g filter="url(#cs2)" style="animation:floatA 3.8s ease-in-out infinite">
+              <rect x="14" y="28" width="72" height="80" rx="10" fill="#fff"/>
+              <rect x="14" y="28" width="72" height="80" rx="10" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+              <rect x="23" y="37" width="30" height="36" rx="5" fill="#185abd"/>
+              <text x="33" y="62" font-family="Arial,sans-serif" font-size="18" font-weight="900" fill="#fff">W</text>
+              <rect x="23" y="80" width="52" height="4" rx="2" fill="#e0e0e0"/>
+              <rect x="23" y="88" width="40" height="4" rx="2" fill="#e0e0e0"/>
+              <rect x="23" y="96" width="34" height="4" rx="2" fill="#0067b8" opacity="0.35"/>
+            </g>
+
+            <!-- Excel card — bottom left -->
+            <g filter="url(#cs2)" style="animation:floatB 4.2s ease-in-out infinite 0.6s">
+              <rect x="8" y="200" width="72" height="80" rx="10" fill="#fff"/>
+              <rect x="8" y="200" width="72" height="80" rx="10" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+              <rect x="17" y="209" width="30" height="36" rx="5" fill="#107c41"/>
+              <text x="25" y="234" font-family="Arial,sans-serif" font-size="18" font-weight="900" fill="#fff">X</text>
+              <!-- mini spreadsheet grid -->
+              <rect x="17" y="252" width="52" height="22" rx="2" fill="#f3f9f4"/>
+              <line x1="34" y1="252" x2="34" y2="274" stroke="#c6e0cc" stroke-width="1"/>
+              <line x1="51" y1="252" x2="51" y2="274" stroke="#c6e0cc" stroke-width="1"/>
+              <line x1="17" y1="261" x2="69" y2="261" stroke="#c6e0cc" stroke-width="1"/>
+              <rect x="19" y="254" width="13" height="6" rx="1" fill="#107c41" opacity="0.25"/>
+            </g>
+
+            <!-- PowerPoint card — top right -->
+            <g filter="url(#cs2)" style="animation:floatC 3.5s ease-in-out infinite 1.1s">
+              <rect x="334" y="22" width="72" height="80" rx="10" fill="#fff"/>
+              <rect x="334" y="22" width="72" height="80" rx="10" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+              <rect x="343" y="31" width="30" height="36" rx="5" fill="#c43e1c"/>
+              <text x="351" y="56" font-family="Arial,sans-serif" font-size="18" font-weight="900" fill="#fff">P</text>
+              <!-- mini slide -->
+              <rect x="343" y="74" width="52" height="22" rx="2" fill="#fff4f2"/>
+              <rect x="346" y="77" width="22" height="3" rx="1" fill="#c43e1c" opacity="0.6"/>
+              <rect x="346" y="83" width="46" height="2" rx="1" fill="#ddd"/>
+              <rect x="346" y="88" width="40" height="2" rx="1" fill="#ddd"/>
+            </g>
+
+            <!-- Teams card — bottom right -->
+            <g filter="url(#cs2)" style="animation:floatA 4.5s ease-in-out infinite 1.8s">
+              <rect x="340" y="208" width="72" height="80" rx="10" fill="#fff"/>
+              <rect x="340" y="208" width="72" height="80" rx="10" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+              <rect x="349" y="217" width="30" height="36" rx="5" fill="#6264a7"/>
+              <!-- Teams T icon simplified -->
+              <rect x="357" y="226" width="14" height="3" rx="1" fill="#fff"/>
+              <rect x="362.5" y="229" width="3" height="16" rx="1" fill="#fff"/>
+              <!-- mini chat bubbles -->
+              <rect x="349" y="260" width="52" height="22" rx="2" fill="#ededf8"/>
+              <rect x="353" y="264" width="30" height="6" rx="3" fill="#6264a7" opacity="0.55"/>
+              <rect x="367" y="273" width="22" height="6" rx="3" fill="#c0c0e0" opacity="0.7"/>
+            </g>
+
+            <!-- Outlook card — mid right (partially visible) -->
+            <g filter="url(#cs2)" style="animation:floatB 3.9s ease-in-out infinite 2.3s">
+              <rect x="347" y="118" width="66" height="74" rx="10" fill="#fff"/>
+              <rect x="347" y="118" width="66" height="74" rx="10" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+              <rect x="355" y="126" width="28" height="32" rx="5" fill="#0067b8"/>
+              <text x="362" y="148" font-family="Arial,sans-serif" font-size="16" font-weight="900" fill="#fff">O</text>
+              <!-- email lines -->
+              <rect x="355" y="165" width="50" height="3" rx="1" fill="#e0e0e0"/>
+              <rect x="355" y="172" width="42" height="3" rx="1" fill="#e0e0e0"/>
+              <rect x="355" y="179" width="38" height="3" rx="1" fill="#0067b8" opacity="0.3"/>
+            </g>
+
+            <style>
+              @keyframes floatA {
+                0%,100% { transform: translateY(0px); }
+                50%      { transform: translateY(-8px); }
+              }
+              @keyframes floatB {
+                0%,100% { transform: translateY(0px); }
+                50%      { transform: translateY(-10px); }
+              }
+              @keyframes floatC {
+                0%,100% { transform: translateY(0px); }
+                50%      { transform: translateY(-6px); }
+              }
+            </style>
+          </svg>
         </div>
       </div>
 
